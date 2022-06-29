@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:ionicons/ionicons.dart';
+import 'package:taks_management_app/app/routes/app_pages.dart';
 
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
-  const LoginView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     backgroundColor: Colors.blue[100],
+      backgroundColor: Colors.blue[100],
       body: Container(
         margin: context.isPhone? EdgeInsets.all(Get.width*0.1): EdgeInsets.all(Get.height*0.1),
         decoration: BoxDecoration(
@@ -46,7 +47,46 @@ class LoginView extends GetView<LoginController> {
                   ],),
                 ),
             )
-            ),
+            )
+            :const SizedBox(),
+             Expanded(
+              child: Container(
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.only(
+                topRight: Radius.circular(50), 
+                bottomRight: Radius.circular(50)),
+                color: Colors.white),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                context.isPhone?
+                Column(
+                    //crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                    Text('welcome',
+                    style: TextStyle(
+                      color: Colors.grey, 
+                      fontSize: 40),),
+                    Text('please sign in',
+                    style: TextStyle(
+                      color: Colors.grey, 
+                      fontSize: 20),),
+                    Text('start journey with us',
+                    style: TextStyle(
+                      color: Colors.grey, 
+                      fontSize: 15),),
+                  ],):const SizedBox(),
+                Image.asset('assets/images/login.png', height: Get.height * 0.5,),
+                FloatingActionButton.extended(
+                  onPressed: ()=>Get.toNamed(Routes.HOME), 
+                  label: Text("Sign in with google"),
+                  icon: Icon(Ionicons.logo_google,
+                  color: Colors.white,),)
+                ],),)
+            )
+          ],
+        ),)
     );
   }
 }
