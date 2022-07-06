@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:task_management_app/app/routes/app_pages.dart';
+import 'package:task_management_app/app/utils/style/AppColors.dart';
 
 class header extends StatelessWidget {
   const header({
@@ -21,10 +22,10 @@ class header extends StatelessWidget {
             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(
                 'Taks Management',
-                style: TextStyle(fontSize: 30, color: Colors.grey),
+                style: TextStyle(fontSize: 30, color: AppColors.primaryText),
               ),
               Text('Manage Your Task Easy',
-                  style: TextStyle(fontSize: 20, color: Colors.grey))
+                  style: TextStyle(fontSize: 15, color: AppColors.primaryText))
             ]),
             Spacer(),
             Expanded(
@@ -51,7 +52,7 @@ class header extends StatelessWidget {
             ),
             Icon(
               Ionicons.notifications,
-              color: Colors.grey,
+              color: AppColors.primaryText,
             ),
             SizedBox(
               width: 20,
@@ -71,7 +72,8 @@ class header extends StatelessWidget {
                 children: [
                   Text(
                     'Sign Out',
-                    style: TextStyle(color: Colors.grey),
+                    style:
+                        TextStyle(color: AppColors.primaryText, fontSize: 18),
                   ),
                   SizedBox(
                     width: 5,
@@ -81,7 +83,8 @@ class header extends StatelessWidget {
             ),
             Icon(
               Ionicons.log_out_outline,
-              color: Colors.grey,
+              color: AppColors.primaryText,
+              size: 30,
             ),
           ],
         ),
