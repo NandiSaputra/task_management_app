@@ -14,7 +14,7 @@ class HomeView extends GetView<HomeController> {
         body: Row(
           children: [
             Expanded(
-              flex: 2,
+              flex: 3,
               child: SideBar(),
             ),
             Expanded(
