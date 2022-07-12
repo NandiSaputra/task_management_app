@@ -70,7 +70,7 @@ class FriendsView extends GetView<FriendsController> {
                                 backgroundColor: Colors.amber,
                                 radius: 25,
                                 foregroundImage: NetworkImage(
-                                    'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Jennifer_Lawrence_in_2016.jpg/220px-Jennifer_Lawrence_in_2016.jpg'),
+                                    'https://akcdn.detik.net.id/community/media/visual/2019/09/26/1d7195bd-2927-4e55-8ecd-6c3f81c96b12_43.jpeg?w=400&q='),
                               ),
                             )
                           ],
@@ -111,7 +111,7 @@ class FriendsView extends GetView<FriendsController> {
                                     borderRadius: BorderRadius.circular(50),
                                     child: Image(
                                       image: NetworkImage(
-                                        'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Jennifer_Lawrence_in_2016.jpg/220px-Jennifer_Lawrence_in_2016.jpg',
+                                        'https://akcdn.detik.net.id/community/media/visual/2019/09/26/1d7195bd-2927-4e55-8ecd-6c3f81c96b12_43.jpeg?w=400&q=',
                                       ),
                                     ),
                                   ),
