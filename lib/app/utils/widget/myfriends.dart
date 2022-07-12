@@ -49,24 +49,22 @@ class MyFriends extends StatelessWidget {
                     shrinkWrap: true,
                     itemCount: 8,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3,
+                        crossAxisCount: context.isPhone ? 2 : 3,
                         crossAxisSpacing: 20,
                         mainAxisSpacing: 20),
                     itemBuilder: (context, index) {
                       return Column(
                         children: [
                           ClipRRect(
-                            borderRadius: BorderRadius.circular(100),
-                            child: CircleAvatar(
-                              backgroundColor: Colors.amber,
-                              radius: 60,
-                              foregroundImage: NetworkImage(
+                            borderRadius: BorderRadius.circular(50),
+                            child: Image(
+                              image: NetworkImage(
                                 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Jennifer_Lawrence_in_2016.jpg/220px-Jennifer_Lawrence_in_2016.jpg',
                               ),
                             ),
                           ),
                           Text(
-                            'Laurance Key',
+                            'Laurence Key',
                             style: TextStyle(color: AppColors.primaryText),
                           )
                         ],
