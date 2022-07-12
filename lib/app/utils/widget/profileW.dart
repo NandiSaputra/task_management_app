@@ -8,19 +8,26 @@ class Profilew extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return Expanded(
       flex: 2,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Robert Downy jR', style: TextStyle(color: AppColors.primaryText, fontSize: 30,
-                                       ),
-                                       ),
-                                        Text('Robert@gmail.com', style: TextStyle(color: AppColors.primaryText, fontSize: 15,
-                                       ),
-                                       ),
+          Text(
+            'Laurence Key',
+            style: TextStyle(
+              color: AppColors.primaryText,
+              fontSize: 30,
+            ),
+          ),
+          Text(
+            'LaurenceK@gmail.com',
+            style: TextStyle(
+              color: AppColors.primaryText,
+              fontSize: 15,
+            ),
+          ),
         ],
       ),
     );

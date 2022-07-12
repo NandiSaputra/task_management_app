@@ -177,7 +177,7 @@ class myTask extends StatelessWidget {
                       backgroundColor: Colors.amber,
                       radius: 20,
                       foregroundImage: NetworkImage(
-                        'https://awsimages.detik.net.id/community/media/visual/2019/10/02/ded14627-7777-4579-ab42-d8fa75b143b1_43.jpeg?w=700&q=90',
+                        'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Jennifer_Lawrence_in_2016.jpg/220px-Jennifer_Lawrence_in_2016.jpg',
                       ),
                     ),
                   ),
@@ -187,7 +187,7 @@ class myTask extends StatelessWidget {
                       backgroundColor: Colors.amber,
                       radius: 20,
                       foregroundImage: NetworkImage(
-                        'https://awsimages.detik.net.id/community/media/visual/2019/10/02/ded14627-7777-4579-ab42-d8fa75b143b1_43.jpeg?w=700&q=90',
+                        'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Jennifer_Lawrence_in_2016.jpg/220px-Jennifer_Lawrence_in_2016.jpg',
                       ),
                     ),
                   ),
