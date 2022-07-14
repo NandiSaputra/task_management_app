@@ -100,7 +100,7 @@ class HomeView extends GetView<HomeController> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
-                            height: Get.height * 0.3,
+                            height: Get.height * 0.4,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -108,7 +108,7 @@ class HomeView extends GetView<HomeController> {
                                   'My Task',
                                   style: TextStyle(
                                     color: AppColors.primaryText,
-                                    fontSize: 30,
+                                    fontSize: 20,
                                   ),
                                 ),
                                 SizedBox(

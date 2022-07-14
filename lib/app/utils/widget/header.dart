@@ -22,10 +22,10 @@ class header extends StatelessWidget {
             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(
                 'Taks Management',
-                style: TextStyle(fontSize: 30, color: AppColors.primaryText),
+                style: TextStyle(fontSize: 15, color: AppColors.primaryText),
               ),
               Text('Manage Your Task Easy',
-                  style: TextStyle(fontSize: 15, color: AppColors.primaryText))
+                  style: TextStyle(fontSize: 12, color: AppColors.primaryText))
             ]),
             Spacer(),
             Expanded(
