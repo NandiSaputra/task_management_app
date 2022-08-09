@@ -21,11 +21,11 @@ class header extends StatelessWidget {
           children: [
             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(
-                'Taks Management',
-                style: TextStyle(fontSize: 15, color: AppColors.primaryText),
+                'Taks Management ',
+                style: TextStyle(fontSize: 14, color: AppColors.primaryText),
               ),
               Text('Manage Your Task Easy',
-                  style: TextStyle(fontSize: 12, color: AppColors.primaryText))
+                  style: TextStyle(fontSize: 10, color: AppColors.primaryText))
             ]),
             Spacer(),
             Expanded(

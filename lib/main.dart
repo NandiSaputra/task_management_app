@@ -4,12 +4,15 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:task_management_app/app/data/controller/auth_controller.dart';
+import 'package:task_management_app/firebase_options.dart';
 
 import 'app/routes/app_pages.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   Get.put(AuthController(), permanent: true);
   runApp(StreamBuilder<User?>(
     stream: FirebaseAuth.instance.authStateChanges(),

@@ -52,12 +52,12 @@ class ProfileView extends GetView<ProfileController> {
                                   Text(
                                     'Taks Management',
                                     style: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: 15,
                                         color: AppColors.primaryText),
                                   ),
                                   Text('Manage Your Task Easy',
                                       style: TextStyle(
-                                          fontSize: 15,
+                                          fontSize: 12,
                                           color: AppColors.primaryText))
                                 ]),
                             Spacer(),
@@ -86,7 +86,7 @@ class ProfileView extends GetView<ProfileController> {
                                     'Sign Out',
                                     style: TextStyle(
                                         color: AppColors.primaryText,
-                                        fontSize: 18),
+                                        fontSize: 15),
                                   ),
                                   SizedBox(
                                     width: 5,
